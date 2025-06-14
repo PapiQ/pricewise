@@ -8,13 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 
-type PageProps = {
-  params: {
-    id: string;
-  };
-};
-
-const ProductDetails = async ({ params }: PageProps) => {
+const ProductDetails = async ({ params }: { params: { id: string } }) => {
   const { id } = params;
   const product: Product = await getProductById(id);
 
