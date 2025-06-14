@@ -8,7 +8,7 @@ interface Props {
   borderColor: string;
 }
 
-const priceInfoCard = ({ title, iconSrc, value }: Props) => {
+const PriceInfoCard = ({ title, iconSrc, value }: Props) => {
   return (
     <div className={`price-info_car`}>
       <p className="text-base text-black-100">{title}</p>
@@ -22,4 +22,4 @@ const priceInfoCard = ({ title, iconSrc, value }: Props) => {
   );
 };
 
-export default priceInfoCard;
+export default PriceInfoCard;
